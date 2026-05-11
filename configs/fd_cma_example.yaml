@@ -1,0 +1,27 @@
+# Example configuration for the FD-CMA workflow.
+# Paths are placeholders and should be replaced by local user paths.
+project:
+  name: FD-CMA
+  seed: 42
+
+feature_interface:
+  transform: 2d_dct
+  retained_block: 32
+  common_grid: [32, 32]
+
+confidence_weight:
+  lambda_depth: 1.0
+  beta_contrast: 1.0
+  normalize: true
+
+training:
+  batch_size: 4
+  epochs: 10
+  learning_rate: 3.0e-4
+  temperature: 0.07
+  loss_weight_alignment: 1.0
+
+deployment:
+  detector: rt_detr
+  mode: gpr_only
+  use_transferred_gpr_encoder: true

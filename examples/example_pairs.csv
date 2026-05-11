@@ -1,0 +1,4 @@
+sample_id,gpr_feature,ert_feature,label,effective_depth,resistivity_contrast
+model_00001,features/gpr/model_00001.npy,features/ert/model_00001.npy,cavity,2.5,0.80
+model_05001,features/gpr/model_05001.npy,features/ert/model_05001.npy,loose,3.0,0.45
+model_10001,features/gpr/model_10001.npy,features/ert/model_10001.npy,crack,2.0,0.65
